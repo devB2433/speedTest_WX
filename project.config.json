@@ -41,7 +41,7 @@
         "condition": true
     },
     "compileType": "miniprogram",
-    "libVersion": "2.19.4",
+    "libVersion": "3.0.2",
     "appid": "wxfaa11435e345f764",
     "projectname": "speedTest_WX",
     "condition": {},
