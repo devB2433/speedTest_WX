@@ -1,0 +1,62 @@
+<!--pages/saved-coordinates/saved-coordinates.wxml-->
+<view class="container saved-coordinates-container">
+  <view class="page-header">
+    <text class="page-title">保存的坐标</text>
+    <view class="refresh-button" bindtap="refreshCoordinates">
+      <text class="refresh-icon">🔄</text>
+      <text class="refresh-text">刷新</text>
+    </view>
+  </view>
+  
+  <!-- 调试信息 -->
+  <view class="debug-info">
+    <text class="debug-text">已加载 {{coordinates.length}} 个坐标点</text>
+  </view>
+
+  <!-- 加载中 -->
+  <view class="loading-container" wx:if="{{loading}}">
+    <view class="loading-icon"></view>
+    <text class="loading-text">加载中...</text>
+  </view>
+
+  <!-- 错误提示 -->
+  <view class="error-container" wx:elif="{{error}}">
+    <text class="error-text">{{error}}</text>
+  </view>
+
+  <!-- 坐标列表 -->
+  <view class="coordinates-list" wx:elif="{{coordinates.length > 0}}">
+    <view class="coordinate-item" wx:for="{{coordinates}}" wx:key="id">
+      <view class="coordinate-info" bindtap="viewCoordinate" data-index="{{index}}">
+        <view class="coordinate-name">{{item.name}}</view>
+        <view class="coordinate-value">{{item.raw}}</view>
+        <view class="coordinate-time">{{item.timestamp}}</view>
+      </view>
+      <view class="coordinate-actions">
+        <view class="action-button map-button" bindtap="viewInMap" data-index="{{index}}">
+          <text class="action-icon">🗺️</text>
+        </view>
+        <view class="action-button delete-button" bindtap="deleteCoordinate" data-index="{{index}}" wx:if="{{item.notes !== '系统默认坐标'}}">
+          <text class="action-icon">🗑️</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 空状态 -->
+  <view class="empty-container" wx:else>
+    <text class="empty-text">暂无保存的坐标</text>
+  </view>
+
+  <!-- 底部按钮区域 -->
+  <view class="bottom-buttons">
+    <view class="button-row">
+      <button class="add-button" bindtap="addCurrentLocation">
+        <text class="button-text">添加当前位置</text>
+      </button>
+      <button class="clear-cache-button" bindtap="clearCache">
+        <text class="button-text">清除缓存</text>
+      </button>
+    </view>
+  </view>
+</view> 

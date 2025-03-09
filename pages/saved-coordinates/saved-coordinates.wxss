@@ -1,0 +1,231 @@
+/* pages/saved-coordinates/saved-coordinates.wxss */
+.saved-coordinates-container {
+  padding: 30rpx;
+  box-sizing: border-box;
+  height: 100vh;
+  background-color: #f8f8f8;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.page-header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40rpx;
+}
+
+.page-title {
+  font-size: 40rpx;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10rpx;
+}
+
+/* 加载中样式 */
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 300rpx;
+}
+
+.loading-icon {
+  width: 60rpx;
+  height: 60rpx;
+  border: 6rpx solid #f3f3f3;
+  border-top: 6rpx solid #07c160;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 20rpx;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loading-text {
+  font-size: 28rpx;
+  color: #888;
+}
+
+/* 错误提示样式 */
+.error-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300rpx;
+}
+
+.error-text {
+  font-size: 28rpx;
+  color: #fa5151;
+}
+
+/* 空状态样式 */
+.empty-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300rpx;
+}
+
+.empty-text {
+  font-size: 28rpx;
+  color: #888;
+}
+
+/* 坐标列表样式 */
+.coordinates-list {
+  width: 100%;
+  flex: 1;
+  overflow-y: auto;
+}
+
+.coordinate-item {
+  background-color: #fff;
+  border-radius: 12rpx;
+  padding: 20rpx;
+  margin-bottom: 20rpx;
+  box-shadow: 0 2rpx 10rpx rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+}
+
+.coordinate-info {
+  flex: 1;
+  padding-right: 20rpx;
+}
+
+.coordinate-name {
+  font-size: 32rpx;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 10rpx;
+}
+
+.coordinate-value {
+  font-size: 28rpx;
+  color: #666;
+  margin-bottom: 10rpx;
+  word-break: break-all;
+}
+
+.coordinate-time {
+  font-size: 24rpx;
+  color: #999;
+}
+
+.coordinate-actions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.action-button {
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10rpx;
+}
+
+.map-button {
+  background-color: #e6f7ff;
+  border: 1rpx solid #91d5ff;
+}
+
+.delete-button {
+  background-color: #fff2f0;
+  border: 1rpx solid #ffccc7;
+}
+
+.action-icon {
+  font-size: 32rpx;
+}
+
+/* 底部按钮区域样式 */
+.bottom-buttons {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30rpx;
+  padding-bottom: 30rpx;
+}
+
+/* 按钮行样式 */
+.button-row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.add-button {
+  flex: 1;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  border-radius: 8rpx;
+  font-size: 28rpx;
+  padding: 0;
+  background-color: #07c160;
+  color: #fff;
+  margin-right: 20rpx;
+}
+
+/* 清除缓存按钮样式 */
+.clear-cache-button {
+  flex: 1;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  border-radius: 8rpx;
+  font-size: 28rpx;
+  padding: 0;
+  background-color: #fa5151;
+  color: #fff;
+}
+
+/* 刷新按钮样式 */
+.refresh-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10rpx;
+  padding: 10rpx 20rpx;
+  background-color: #f0f0f0;
+  border-radius: 30rpx;
+  cursor: pointer;
+}
+
+.refresh-icon {
+  font-size: 28rpx;
+  margin-right: 6rpx;
+}
+
+.refresh-text {
+  font-size: 24rpx;
+  color: #666;
+}
+
+/* 调试信息样式 */
+.debug-info {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10rpx;
+  padding: 5rpx 0;
+  background-color: #f0f9ff;
+  border-radius: 8rpx;
+}
+
+.debug-text {
+  font-size: 24rpx;
+  color: #0066cc;
+} 

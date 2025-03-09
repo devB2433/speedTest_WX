@@ -1,0 +1,101 @@
+<!--pages/location/location.wxml-->
+<view class="container location-container {{isAlerting ? 'alerting' : ''}}">
+  <!-- 闪烁遮罩层 -->
+  <view class="flash-overlay {{isAlerting ? 'active' : ''}}"></view>
+  
+  <!-- 隐藏的音频元素 -->
+  <canvas type="2d" id="audio-player" style="width: 1px; height: 1px; position: absolute; opacity: 0;"></canvas>
+  
+  <!-- 原生音频组件 -->
+  <audio id="myAudio" src="https://fanyi.baidu.com/gettts?lan=zh&text=您已接近超速摄像头，请减速&spd=5&source=wise" style="display:none;"></audio>
+  
+  <view class="page-header">
+    <text class="page-title">实时位置</text>
+    <text class="update-time" wx:if="{{updateTime}}">更新时间: {{updateTime}}</text>
+  </view>
+
+  <!-- 位置信息卡片 -->
+  <view class="location-card">
+    <!-- 错误提示 -->
+    <view class="error-message" wx:if="{{errorMsg}}">
+      <text>{{errorMsg}}</text>
+      <button class="auth-button" bindtap="requestAuth" wx:if="{{!locationEnabled}}">授权获取位置</button>
+    </view>
+
+    <!-- 位置信息 -->
+    <view class="location-info" wx:else>
+      <view class="info-row">
+        <text class="info-label">纬度:</text>
+        <text class="info-value">{{latitude}}°</text>
+      </view>
+      <view class="info-row">
+        <text class="info-label">经度:</text>
+        <text class="info-value">{{longitude}}°</text>
+      </view>
+      <view class="info-row">
+        <text class="info-label">精确度:</text>
+        <text class="info-value">{{accuracy}} 米</text>
+      </view>
+      <view class="info-row">
+        <text class="info-label">速度:</text>
+        <text class="info-value">{{speed}} m/s</text>
+      </view>
+    </view>
+
+    <!-- 状态指示器 -->
+    <view class="status-indicator">
+      <view class="status-dot {{isLocating ? 'active' : ''}}"></view>
+      <text class="status-text">{{isLocating ? '实时更新中' : '未在更新'}}</text>
+    </view>
+  </view>
+
+  <!-- 监控信息卡片 -->
+  <view class="monitor-card">
+    <view class="monitor-header">
+      <text class="monitor-title">位置监控</text>
+      <switch class="monitor-switch" checked="{{monitoringEnabled}}" bindchange="toggleMonitoring" color="#07c160"/>
+    </view>
+    
+    <view class="monitor-info" wx:if="{{monitoringEnabled}}">
+      <view class="monitor-status {{isAlerting ? 'alerting' : ''}}">
+        <text class="status-text">{{isAlerting ? '接近超速摄像头！' : '监控中...'}}</text>
+      </view>
+      
+      <view class="monitor-details" wx:if="{{nearbyCoordinate}}">
+        <view class="detail-row">
+          <text class="detail-label">最近坐标点:</text>
+          <text class="detail-value">{{nearbyCoordinate.name}}</text>
+        </view>
+        <view class="detail-row">
+          <text class="detail-label">当前距离:</text>
+          <text class="detail-value {{distance <= alertRadius ? 'alert-distance' : ''}}">{{distance}} 米</text>
+        </view>
+        <view class="detail-row">
+          <text class="detail-label">警报半径:</text>
+          <text class="detail-value">{{alertRadius}} 米</text>
+        </view>
+      </view>
+      
+      <view class="monitor-tip" wx:else>
+        <text>没有找到附近的坐标点</text>
+      </view>
+    </view>
+    
+    <view class="monitor-tip" wx:else>
+      <text>开启监控后，当接近保存的坐标点时将会发出警报</text>
+    </view>
+  </view>
+
+  <!-- 操作按钮 -->
+  <view class="action-buttons">
+    <button class="action-button refresh" bindtap="refreshLocation">
+      <text class="button-text">刷新位置</text>
+    </button>
+    <button class="action-button save" bindtap="saveCurrentLocation">
+      <text class="button-text">保存此位置</text>
+    </button>
+    <button class="action-button map" bindtap="openInMap">
+      <text class="button-text">在地图中查看</text>
+    </button>
+  </view>
+</view> 

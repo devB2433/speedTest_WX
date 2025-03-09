@@ -1,0 +1,45 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <block wx:if="{{canIUseOpenData}}">
+      <view class="userinfo-avatar" bindtap="bindViewTap">
+        <open-data type="userAvatarUrl"></open-data>
+      </view>
+      <open-data type="userNickName"></open-data>
+    </block>
+    <block wx:elif="{{!hasUserInfo}}">
+      <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile"> 获取头像昵称 </button>
+      <button wx:elif="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+      <view wx:else> 欢迎使用超速监控助手 </view>
+    </block>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  
+  <!-- 功能导航区 -->
+  <view class="nav-section">
+    <view class="nav-title">功能导航</view>
+    <view class="nav-buttons">
+      <navigator url="/pages/location/location" class="nav-button location-button">
+        <view class="nav-icon">📍</view>
+        <text class="nav-text">实时位置</text>
+      </navigator>
+      <navigator url="/pages/saved-coordinates/saved-coordinates" class="nav-button saved-button">
+        <view class="nav-icon">📌</view>
+        <text class="nav-text">保存的坐标</text>
+      </navigator>
+      <navigator url="/pages/guide/guide" class="nav-button guide-button">
+        <view class="nav-icon">📖</view>
+        <text class="nav-text">使用说明</text>
+      </navigator>
+    </view>
+  </view>
+  
+  <!-- 页脚信息 -->
+  <view class="footer">
+    <text class="designer">Designed by Peter</text>
+    <text class="build-number">Build: {{buildNumber}}</text>
+  </view>
+</view> 

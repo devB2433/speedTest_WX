@@ -1,0 +1,108 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #aaa;
+}
+
+.userinfo-avatar {
+  overflow: hidden;
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+
+/* 导航区样式 */
+.nav-section {
+  width: 100%;
+  margin-top: 60rpx;
+  padding: 0 30rpx;
+  box-sizing: border-box;
+}
+
+.nav-title {
+  font-size: 32rpx;
+  color: #333;
+  margin-bottom: 30rpx;
+  font-weight: bold;
+  text-align: center;
+}
+
+.nav-buttons {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.nav-button {
+  width: 30%;
+  height: 180rpx;
+  background-color: #fff;
+  border-radius: 12rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20rpx;
+  box-shadow: 0 2rpx 10rpx rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.nav-button:active {
+  transform: scale(0.98);
+  box-shadow: 0 1rpx 5rpx rgba(0, 0, 0, 0.1);
+}
+
+.location-button {
+  background-color: #e6f7ff;
+  border: 1rpx solid #91d5ff;
+}
+
+.saved-button {
+  background-color: #fff7e6;
+  border: 1rpx solid #ffd591;
+}
+
+.guide-button {
+  background-color: #f6ffed;
+  border: 1rpx solid #b7eb8f;
+}
+
+.nav-icon {
+  font-size: 48rpx;
+  margin-bottom: 20rpx;
+}
+
+.nav-text {
+  font-size: 28rpx;
+  color: #333;
+}
+
+/* 页脚样式 */
+.footer {
+  width: 100%;
+  margin-top: 60rpx;
+  padding: 30rpx 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-top: 1rpx solid #f0f0f0;
+}
+
+.designer {
+  font-size: 24rpx;
+  color: #888;
+  margin-bottom: 10rpx;
+}
+
+.build-number {
+  font-size: 20rpx;
+  color: #bbb;
+} 

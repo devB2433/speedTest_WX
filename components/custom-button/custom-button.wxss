@@ -1,0 +1,29 @@
+/* components/custom-button/custom-button.wxss */
+.custom-button {
+  border-radius: 8rpx;
+  font-size: 28rpx;
+  padding: 20rpx 30rpx;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.default {
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+.primary {
+  background-color: #07c160;
+  color: #fff;
+}
+
+.warn {
+  background-color: #fa5151;
+  color: #fff;
+}
+
+.mini {
+  font-size: 24rpx;
+  padding: 12rpx 20rpx;
+} 

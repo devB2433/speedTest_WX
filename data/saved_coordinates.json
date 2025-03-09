@@ -1,0 +1,309 @@
+{
+  "coordinates": [
+    {
+      "id": 1,
+      "name": "River Glen Boulevard between Towne Boulevard and Mowat Avenue",
+      "raw": "43°28'02.4\"N 79°44'09.7\"W",
+      "decimal": {
+        "latitude": 43.467333,
+        "longitude": -79.736028
+      },
+      "dms": {
+        "latitude": {
+          "degrees": 43,
+          "minutes": 28,
+          "seconds": 2.4,
+          "direction": "N"
+        },
+        "longitude": {
+          "degrees": 79,
+          "minutes": 44,
+          "seconds": 9.7,
+          "direction": "W"
+        }
+      },
+      "timestamp": "2025-03-09T03:52:00.000Z",
+      "notes": "系统默认坐标"
+    },
+    {
+      "id": 2,
+      "name": "Sixth Line between A point 75 metres south of Elm Road and Upper Middle Road East/Upper Middle Road West",
+      "raw": "43°27'55.8\"N 79°42'35.7\"W",
+      "decimal": {
+        "latitude": 43.465500,
+        "longitude": -79.709917
+      },
+      "dms": {
+        "latitude": {
+          "degrees": 43,
+          "minutes": 27,
+          "seconds": 55.8,
+          "direction": "N"
+        },
+        "longitude": {
+          "degrees": 79,
+          "minutes": 42,
+          "seconds": 35.7,
+          "direction": "W"
+        }
+      },
+      "timestamp": "2025-03-09T04:15:00.000Z",
+      "notes": "系统默认坐标"
+    },
+    {
+      "id": 3,
+      "name": "Reynolds Street between Cornwall Road and Sumner Avenue",
+      "raw": "43°27'10.5\"N 79°40'26.3\"W",
+      "decimal": {
+        "latitude": 43.452917,
+        "longitude": -79.673972
+      },
+      "dms": {
+        "latitude": {
+          "degrees": 43,
+          "minutes": 27,
+          "seconds": 10.5,
+          "direction": "N"
+        },
+        "longitude": {
+          "degrees": 79,
+          "minutes": 40,
+          "seconds": 26.3,
+          "direction": "W"
+        }
+      },
+      "timestamp": "2025-03-09T05:00:00.000Z",
+      "notes": "系统默认坐标"
+    },
+    {
+      "id": 4,
+      "name": "Old Abbey Lane between Montrose Abbey Drive and Milton Road/ Northwood Drive",
+      "raw": "43°26'44.6\"N 79°42'38.6\"W",
+      "decimal": {
+        "latitude": 43.445722,
+        "longitude": -79.710722
+      },
+      "dms": {
+        "latitude": {
+          "degrees": 43,
+          "minutes": 26,
+          "seconds": 44.6,
+          "direction": "N"
+        },
+        "longitude": {
+          "degrees": 79,
+          "minutes": 42,
+          "seconds": 38.6,
+          "direction": "W"
+        }
+      },
+      "timestamp": "2025-03-09T05:30:00.000Z",
+      "notes": "系统默认坐标"
+    },
+    {
+      "id": 5,
+      "name": "Nottinghill Gate between Runnymead Crescent (easterly intersection) and Beechgrove Crescent (southerly intersection)",
+      "raw": "43°26'23.7\"N 79°43'05.3\"W",
+      "decimal": {
+        "latitude": 43.439917,
+        "longitude": -79.718139
+      },
+      "dms": {
+        "latitude": {
+          "degrees": 43,
+          "minutes": 26,
+          "seconds": 23.7,
+          "direction": "N"
+        },
+        "longitude": {
+          "degrees": 79,
+          "minutes": 43,
+          "seconds": 5.3,
+          "direction": "W"
+        }
+      },
+      "timestamp": "2025-03-10T08:30:00.000Z",
+      "notes": "系统默认坐标"
+    },
+    {
+      "id": 6,
+      "name": "Pine Glen Road between Newcastle Crescent (westerly intersection) and Proudfoot Trail",
+      "raw": "43°27'04.4\"N 79°45'15.4\"W",
+      "decimal": {
+        "latitude": 43.451222,
+        "longitude": -79.754278
+      },
+      "dms": {
+        "latitude": {
+          "degrees": 43,
+          "minutes": 27,
+          "seconds": 4.4,
+          "direction": "N"
+        },
+        "longitude": {
+          "degrees": 79,
+          "minutes": 45,
+          "seconds": 15.4,
+          "direction": "W"
+        }
+      },
+      "timestamp": "2025-03-11T09:00:00.000Z",
+      "notes": "系统默认坐标"
+    },
+    {
+      "id": 7,
+      "name": "Westoak Trails Boulevard between Brookhaven Crescent/ Arbourview Drive and Colbeck Street/ Amberglen Court",
+      "raw": "43°25'53.3\"N 79°45'35.2\"W",
+      "decimal": {
+        "latitude": 43.431472,
+        "longitude": -79.759778
+      },
+      "dms": {
+        "latitude": {
+          "degrees": 43,
+          "minutes": 25,
+          "seconds": 53.3,
+          "direction": "N"
+        },
+        "longitude": {
+          "degrees": 79,
+          "minutes": 45,
+          "seconds": 35.2,
+          "direction": "W"
+        }
+      },
+      "timestamp": "2025-03-11T09:05:00.000Z",
+      "notes": "系统默认坐标"
+    },
+    {
+      "id": 8,
+      "name": "Colonel William Parkway between A point 340 metres south of Stocksbridge Avenue/Richview Boulevard and Watercliffe Court",
+      "raw": "43°25'24.4\"N 79°46'17.8\"W",
+      "decimal": {
+        "latitude": 43.423444,
+        "longitude": -79.771611
+      },
+      "dms": {
+        "latitude": {
+          "degrees": 43,
+          "minutes": 25,
+          "seconds": 24.4,
+          "direction": "N"
+        },
+        "longitude": {
+          "degrees": 79,
+          "minutes": 46,
+          "seconds": 17.8,
+          "direction": "W"
+        }
+      },
+      "timestamp": "2025-03-11T09:10:00.000Z",
+      "notes": "系统默认坐标"
+    },
+    {
+      "id": 9,
+      "name": "Rebecca Street between Sussex Street and Bronte Road",
+      "raw": "43°23'56.6\"N 79°43'07.4\"W",
+      "decimal": {
+        "latitude": 43.399056,
+        "longitude": -79.718722
+      },
+      "dms": {
+        "latitude": {
+          "degrees": 43,
+          "minutes": 23,
+          "seconds": 56.6,
+          "direction": "N"
+        },
+        "longitude": {
+          "degrees": 79,
+          "minutes": 43,
+          "seconds": 7.4,
+          "direction": "W"
+        }
+      },
+      "timestamp": "2025-03-11T09:15:00.000Z",
+      "notes": "系统默认坐标"
+    },
+    {
+      "id": 10,
+      "name": "Post Road between Dundas Street East and Threshing Mill Boulevard",
+      "raw": "43°29'06.4\"N 79°43'54.7\"W",
+      "decimal": {
+        "latitude": 43.485111,
+        "longitude": -79.731861
+      },
+      "dms": {
+        "latitude": {
+          "degrees": 43,
+          "minutes": 29,
+          "seconds": 6.4,
+          "direction": "N"
+        },
+        "longitude": {
+          "degrees": 79,
+          "minutes": 43,
+          "seconds": 54.7,
+          "direction": "W"
+        }
+      },
+      "timestamp": "2025-03-12T10:00:00.000Z",
+      "notes": "系统默认坐标"
+    },
+    {
+      "id": 11,
+      "name": "Glenashton Drive between Eighth Line and Grand Boulevard",
+      "raw": "43°29'16.9\"N 79°41'55.7\"W",
+      "decimal": {
+        "latitude": 43.488028,
+        "longitude": -79.698806
+      },
+      "dms": {
+        "latitude": {
+          "degrees": 43,
+          "minutes": 29,
+          "seconds": 16.9,
+          "direction": "N"
+        },
+        "longitude": {
+          "degrees": 79,
+          "minutes": 41,
+          "seconds": 55.7,
+          "direction": "W"
+        }
+      },
+      "timestamp": "2025-03-13T11:00:00.000Z",
+      "notes": "系统默认坐标"
+    },
+    {
+      "id": 12,
+      "name": "North Ridge Trail between Glenashton Drive and Postridge Drive",
+      "raw": "43°29'37.6\"N 79°41'46.7\"W",
+      "decimal": {
+        "latitude": 43.493778,
+        "longitude": -79.696306
+      },
+      "dms": {
+        "latitude": {
+          "degrees": 43,
+          "minutes": 29,
+          "seconds": 37.6,
+          "direction": "N"
+        },
+        "longitude": {
+          "degrees": 79,
+          "minutes": 41,
+          "seconds": 46.7,
+          "direction": "W"
+        }
+      },
+      "timestamp": "2025-03-13T11:05:00.000Z",
+      "notes": "系统默认坐标"
+    }
+  ],
+  "meta": {
+    "version": "1.0",
+    "description": "存储用户保存的坐标点",
+    "lastUpdated": "2025-03-13T11:05:00.000Z"
+  }
+} 

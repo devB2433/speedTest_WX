@@ -1,0 +1,10 @@
+<!-- components/custom-button/custom-button.wxml -->
+<button 
+  class="custom-button {{type}} {{size}}" 
+  disabled="{{disabled}}"
+  loading="{{loading}}"
+  bindtap="handleTap"
+>
+  <slot></slot>
+  {{text}}
+</button> 
