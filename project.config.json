@@ -37,15 +37,21 @@
             "ignore": [],
             "disablePlugins": [],
             "outputPath": ""
-        }
+        },
+        "condition": true
     },
     "compileType": "miniprogram",
     "libVersion": "2.19.4",
-    "appid": "wx7e360165c7fc590c",
+    "appid": "wxfaa11435e345f764",
     "projectname": "speedTest_WX",
     "condition": {},
     "editorSetting": {
         "tabIndent": "insertSpaces",
         "tabSize": 4
-    }
+    },
+    "simulatorType": "wechat",
+    "simulatorPluginLibVersion": {
+        "wxext14566970e7e9f62": "3.6.5-24"
+    },
+    "projectArchitecture": "multiPlatform"
 }
